@@ -1,0 +1,163 @@
+.card-panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.large-elements {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  cursor: pointer;
+  animation: smallToLarge 1s ease-in-out forwards;
+}
+
+.large-elements__card {
+  width: 180px;
+  height: 180px;
+  background: #36abfe;
+  margin: 16px;
+  transform-origin: top left;
+  border-radius: 24px;
+  transition: all 1s ease-in-out;
+}
+
+.small-elements {
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4px;
+  box-sizing: border-box;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  animation: largeToSmall 1s ease-in-out forwards;
+}
+
+.small-elements__card {
+  width: 60px;
+  height: 60px;
+  background: #36abfe;
+  margin: 8px;
+  transform-origin: top left;
+  border-radius: 8px;
+  transition: all 1s ease-in-out;
+  
+}
+
+@keyframes largeToSmall {
+  0% {
+    bottom: 33%;
+  }
+
+  90% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #494c51;
+    bottom: 0;
+  }
+}
+
+@keyframes smallToLarge {
+  0% {
+    bottom: 0;
+  }
+  10% {
+    background-color: transparent;
+  }
+  100% {
+    bottom: none;
+  }
+  
+}
+/* 
+.card-panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.large-elements {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  cursor: pointer;
+  animation: smallToLarge 1s ease-in-out forwards;
+}
+
+.large-elements__card {
+  width: 180px;
+  height: 180px;
+  background: #36abfe;
+  margin: 16px;
+  transform-origin: top left;
+  border-radius: 24px;
+  transition: all 1s ease-in-out;
+}
+
+.small-elements {
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4px;
+  box-sizing: border-box;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  animation: largeToSmall 1s ease-in-out forwards;
+}
+
+.small-elements__card {
+  width: 60px;
+  height: 60px;
+  background: #36abfe;
+  margin: 8px;
+  transform-origin: top left;
+  border-radius: 8px;
+  transition: all 1s ease-in-out;
+  
+}
+
+@keyframes largeToSmall {
+  0% {
+    bottom: 33%;
+  }
+
+  90% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #494c51;
+    bottom: 0;
+  }
+}
+
+@keyframes smallToLarge {
+  0% {
+    bottom: 0;
+  }
+  10% {
+    background-color: transparent;
+  }
+  100% {
+    bottom: none;
+  }
+  
+}
+
+ */
